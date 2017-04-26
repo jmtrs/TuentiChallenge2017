@@ -1,11 +1,26 @@
 /* Problem 1 - PiZZA
  * Author: jmtrs
  * Languaje: GoLang
- * Execution: go run TheBuffer.go < a.in > a.out
+ * Execution: go run 1.go < a.in > a.out
  */
 
 package main
+
+
 import "fmt"
+//import "math"
+
+
 func main() {
-    fmt.Println("hello world")
+    var cases int
+    //var people int
+    var portion int
+    //var pizzas int
+    
+	fmt.Scanf("%d", &cases)
+	for i:= 1; i <= cases; cases++{
+    	 fmt.Scanf("%d", &portion) 
+    	 fmt.Printf("%f\n", portion)
+    	   cases++ 
+	}
 }
