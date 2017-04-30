@@ -15,6 +15,14 @@ func main() {
 	var people string
 	// var portion int
 	//var pizzas int
+	
+	counter := 0
+	for scanner.Scan() {
+	    line := scanner.Text()
+	    counter++
+	    // do something with your line
+	}
+	fmt.Printf("Lines read: %d", counter)
 
 	fmt.Scanf("%d", &cases)
 	fmt.Printf("Casos: %d\n", cases)
@@ -22,5 +30,7 @@ func main() {
 		fmt.Scanf("%[^\n]%*s", &people)
 		fmt.Printf("%s\n", people)
 		i++
+		
+		
 	}
 }
