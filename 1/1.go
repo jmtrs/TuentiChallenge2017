@@ -6,21 +6,21 @@
 
 package main
 
-
 import "fmt"
+
 //import "math"
 
-
 func main() {
-    var cases int
-    //var people int
-    var portion int
-    //var pizzas int
-    
+	var cases int
+	var people string
+	// var portion int
+	//var pizzas int
+
 	fmt.Scanf("%d", &cases)
-	for i:= 1; i <= cases; cases++{
-    	 fmt.Scanf("%d", &portion) 
-    	 fmt.Printf("%f\n", portion)
-    	   cases++ 
+	fmt.Printf("Casos: %d\n", cases)
+	for i := 1; i <= cases*2; i++ {
+		fmt.Scanf("%[^\n]%*s", &people)
+		fmt.Printf("%s\n", people)
+		i++
 	}
 }
