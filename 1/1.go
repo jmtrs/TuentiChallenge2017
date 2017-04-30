@@ -6,31 +6,27 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 //import "math"
 
 func main() {
 	var cases int
-	var people string
+	var people int
 	// var portion int
 	//var pizzas int
-	
+
 	counter := 0
-	for scanner.Scan() {
-	    line := scanner.Text()
-	    counter++
-	    // do something with your line
-	}
-	fmt.Printf("Lines read: %d", counter)
 
 	fmt.Scanf("%d", &cases)
 	fmt.Printf("Casos: %d\n", cases)
-	for i := 1; i <= cases*2; i++ {
-		fmt.Scanf("%[^\n]%*s", &people)
-		fmt.Printf("%s\n", people)
-		i++
-		
-		
+
+	for i := 1; i <= cases; i++ {
+
+		fmt.Scanf("%d", &people)
+		fmt.Printf("%d\n %d", people, counter)
+		counter++
 	}
 }
